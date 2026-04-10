@@ -1,0 +1,12 @@
+pre-commit:
+  parallel: false
+  commands:
+    format:
+      run: bun run format:fix
+      stage_fixed: true
+    validate:
+      run: bun run validate
+    test:
+      run: bun test
+    build:
+      run: bun run build
